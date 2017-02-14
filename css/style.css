@@ -1,0 +1,208 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#container-nav {
+    background-color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Roboto Condensed', 'Helvetica Neue', 'helvetica', sans-serif;
+}
+
+.wrapper {
+    padding: 0 .65em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 3.189em;
+    line-height: 1.223em;
+}
+
+h2 {
+    font-size: 2.126em;
+    line-height: 1.223em;
+}
+
+h3 {
+    font-size: 1.382em;
+    line-height: 1.176em;
+}
+
+h4 {
+    font-size: 1em;
+    line-height: 1.56;
+    text-transform: uppercase;
+}
+
+h5, h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .85em;
+    line-height: 1.53;
+    font-weight: 500;
+}
+
+h6 {
+    color: #aaa;
+    font-weight: 200;
+}
+
+/*ie scaling fix-------------------------------*/
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+/*--------------------------------------------*/
+
+
+
+/*nav menu---------------------------*/
+
+#nav {
+    padding: .65em 0;
+}
+
+#nav h3 {
+    float: left;
+    text-transform: capitalize;
+    margin: .24em 0;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    margin: .65em 0 .39em;
+}
+
+#nav li {
+    border-top: 1px solid #eee;
+}
+
+#nav a {
+    display: block;
+    font-size: 1.063em;
+    color: #333;
+    text-decoration: none;
+    padding: .975em 1.3em;
+}
+
+#nav a:hover {
+    background: #f8f8f8;
+}
+
+/*hide nav to toggle on/off later-----*/
+
+#nav nav {
+    height: 0;
+    overflow: hidden;
+}
+
+/*------------------------------------*/
+
+/*advanced checkbox hack--------------*/
+
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+    }
+    to {
+        padding: 0;
+    }
+}
+
+#nav input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+
+#nav label {
+    display: block;
+    background: url("images/icon-menu.png") no-repeat right center;
+    text-indent: -999em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#nav input[type=checkbox]:checked~nav {
+    height: auto;
+    overflow: hidden;
+}
+
+/*clearfix hack*/
+
+.group:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+    clear: both;
+}
+
+.group {
+    *zoom: 1;
+    /* 3 */
+}
+
+html {
+    font-size: 100%;
+    line-height: 1;
+    /* disable auto scaling on smartphones*/
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    /*--------------------------------------*/
+}
+
+@media screen and (min-width: 45em) {
+
+  #nav {
+      padding: 0;
+  }
+  #nav h3 {
+      margin: .5em 1.3em 0 0;
+  }
+  #nav label {
+      display: none;
+  }
+  #nav nav {
+      height: auto;
+      overflow: visible;
+  }
+  #nav ul {
+      border: 0;
+      margin: 0;
+  }
+  #nav li {
+      display: inline;
+      border: 0;
+  }
+  #nav a {
+      display: inline-block;
+  }
+  body {
+      font-size: 107.692%;
+  }
+
+}
