@@ -12,7 +12,7 @@ img {
 }
 
 body {
-    font-family: 'Roboto Condensed', 'Helvetica Neue', 'helvetica', sans-serif;
+    font-family: 'Julius Sans One', 'Helvetica Neue', 'helvetica', sans-serif;
 }
 
 .wrapper {
@@ -72,15 +72,22 @@ img {
 
 /*nav menu---------------------------*/
 
+#container-nav{
+  padding: 3em 0em 3em 1em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 #nav {
     padding: .65em 0;
+
 }
 
 #nav h3 {
     float: left;
     text-transform: capitalize;
     margin: .24em 0;
-    color:white;
+    color:#24242C;
 }
 
 #nav ul {
@@ -88,22 +95,31 @@ img {
     padding: 0;
     border-bottom: 1px solid #eee;
     margin: .65em 0 .39em;
+    text-align: right;
 }
 
 #nav li {
     border-top: 1px solid #eee;
+
 }
 
 #nav a {
     display: block;
     font-size: 1.063em;
-    color: #E1455A;
+    color: #24242C;
     text-decoration: none;
     padding: .975em 1.3em;
 }
 
 #nav a:hover {
-    background: #f8f8f8;
+    color: #AE0023;
+}
+
+#border {
+  border-top: 2px solid #24242C;
+  border-bottom: 2px solid #24242C;
+  font-weight: bold;
+
 }
 
 /*hide nav to toggle on/off later-----*/
@@ -138,7 +154,7 @@ body {
 
 #nav label {
     display: block;
-    background: url("images/icon-menu.png") no-repeat right center;
+    background: url("img/menu3.png") no-repeat right center;
     text-indent: -999em;
     cursor: pointer;
     -webkit-user-select: none;
@@ -177,13 +193,19 @@ html {
 }
 
 #container-nav {
-  background: #24242C;
+  background: white;
 }
 
 #container-header {
-  background: #24242C url("img/header.jpg") no-repeat top center;
-  padding: 30% 0 8% 0;
+  background: white url("img/header.jpg") no-repeat bottom center;
+  padding: 24% 0 18% 0;
   max-width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
 }
 
 #container-header h1 {
@@ -191,10 +213,30 @@ html {
   border: 4px solid white;
   padding:0 2% 0 2%;
   display:inline-block;
-  margin:0 auto;
+  margin:30px;
 }
 
+#about {
+  max-width: 90%;
+  text-align: center;
+  padding:8.1em;
+  margin:0 auto;
+  font-size: 1.6em;
+  font-weight: bold;
+}
 
+#gallery {
+  max-width: 50%;
+  background: #EAF0EC;
+  height: 30em;
+}
+
+#work{
+  background: white url("img/coffee.jpg") no-repeat center center;
+  max-width: 50%;
+  height:712px;
+
+}
 
 
 @media screen and (min-width: 45em) {
@@ -226,5 +268,6 @@ html {
   body {
       font-size: 107.692%;
   }
+
 
 }
